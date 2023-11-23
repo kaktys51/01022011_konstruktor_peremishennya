@@ -13,7 +13,7 @@ public:
 	Ion() :charge('-'), valence(1) {}
 	Ion(char _charge, int valen) : valence(valen)
 	{
-		if (_charge != '-' && _charge != '+') charge = '-'; // пересмотреть на возможность вызова функции для задания новых значений
+		if (_charge != '-' && _charge != '+') charge = '-'; 
 		else charge = _charge;
 
 		if (valen > 7 || valen < 1) valence = 1;
